@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+
+    <form action="/flights/<%=id%>/ticket/new" method="POST">
+        <label>Seat</label><br />
+        <select name="seatLetter">
+            <% for (let i=0; i < letters.length; i++) { %>
+                <option value="<%=letters[i]%>"><%=letters[i]%></option>
+            <% } %>
+        </select>
+        <select name="seatNumber">
+            <% for (let j=1; j <=99; j++) { %>
+                <option value="<%=j%>"><%=j%></option>
+            <% } %>
+        </select>
+        <br />
+        <br />
+        <label>Price</label>
+        <br />
+        <label>$</label><input type="number" min="0" name="price">
+        <br />
+        <br />
+        <button type="submit">Purchase</button>
+    </form>
+
+    <%- include('../partials/footer') %>

@@ -1,0 +1,41 @@
+<%- include('../partials/header.ejs') %>
+    <form action="/flights" method="POST">
+        <table>
+            <thead>
+                <tr>
+                    <th>Airline</th>
+                    <th>Airport</th>
+                    <th>Flight No.</th>
+                    <th>Departure Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <select name="airline">
+                            <% for (line of airlines){ %>
+                                <option value="<%=line%>"><%=line%></option>
+                            <% } %>
+                          </select>
+                    </td>
+                    <td>
+                        <select name="airport">
+                            <% for (code of codes){ %>
+                                <option value="<%=code%>"><%=code%></option>
+                            <% } %>
+                          </select>
+                    </td>
+                    <td>
+                        <input type="number" min="10" max="9999" name="flightNo">
+                    </td>
+                    <td>
+                        <input type="date" name="departs">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <button class="book" type="submit">Book Flight</button>
+    </form>
+    <p><%= errorMsg %></p>
+    <%- include('../partials/footer.ejs') %>

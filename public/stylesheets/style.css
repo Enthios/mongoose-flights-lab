@@ -1,0 +1,154 @@
+
+  body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+p,th,td,input,select,option,button{
+  font-size: 17px;
+}
+
+a {
+  color: #5e41c9;
+}
+
+h1,h2,.fancy{
+  font-family: 'Carter One', cursive;
+}
+
+button{
+  background-color: #5e41c9;
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 25px;
+
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+hr {
+  margin: 20px 0 10px 0;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #5e41c9;
+  display: flex;
+  align-items: center;
+}
+
+header>nav>ul {
+  display: flex;
+  padding: 0;
+}
+
+header>nav>ul>li {
+  font-size: 16px;
+  width: 110px;
+  height: 75px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+header>nav>ul>li>a{
+  color: #fff;
+  text-decoration: none;
+}
+
+header>nav>ul>li>a:hover{
+  text-decoration: underline !important;
+}
+
+.first{
+  background-color: #5e41c9;
+}
+
+.second{
+  background-color: #5e41c9;
+}
+
+.last{
+  background-color: #5e41c9;
+}
+
+header>h1 {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #36b33631;
+  text-align: center;
+  padding: 0 25px;
+}
+
+main {
+  margin-top: 50px;
+}
+
+table{
+  text-align: left;
+}
+
+th, td{
+  width: 175px;
+  padding: 0 10px;
+}
+
+td>a>button{
+  background-color: transparent;
+  color: #5e41c9;
+  text-decoration: underline;
+}
+
+th {
+  background-color: #5e41c9;
+  color: #fff;
+  height: 40px;
+}
+
+.even{
+  background-color: #fff;
+}
+
+.odd{
+  background-color: #e5effc;
+}
+
+.add-arrival-form {
+  margin-top: 25px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #5e41c9;
+  color: #fff;
+  justify-content: right;
+
+}
+
+footer>p{
+  width: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #5e41c9;
+  padding: 0 50px;
+}
